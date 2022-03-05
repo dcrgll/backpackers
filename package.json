@@ -6,17 +6,28 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "yarn standard && yarn lint",
+    "db:up": "firebase emulators:start",
+    "db:seed": "firebase emulators:start --only firestore"
   },
   "dependencies": {
+    "firebase": "^9.6.8",
     "next": "12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-firebase-hooks": "^5.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
-    "eslint": "8.10.0",
+    "eslint": "^7.32.0",
     "eslint-config-next": "12.1.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-react": "^7.29.3",
+    "firebase-tools": "^10.2.2",
     "postcss": "^8.4.7",
     "standard": "^16.0.4",
     "tailwindcss": "^3.0.23"
