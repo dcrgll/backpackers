@@ -1,0 +1,12 @@
+name: code-standards 🧪
+
+on: push
+jobs:
+  code-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: yarn
+      - name: Run Standard
+        run: yarn standard && yarn lint
