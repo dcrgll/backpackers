@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "yarn standard && yarn lint",
+    "setup": "yarn db:up && yarn db:seed",
     "db:up": "firebase emulators:start",
     "db:seed": "node ./src/config/seed.js",
     "db:clear": "curl -v -X DELETE 'http://localhost:8080/emulator/v1/projects/backpackers-e1027/databases/(default)/documents'"
