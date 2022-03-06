@@ -15,8 +15,6 @@ async function getSeedData () {
         first_name: faker.name.firstName(),
         last_name: faker.name.lastName(),
         avatar: faker.image.imageUrl(),
-        title: faker.commerce.productName(),
-        description: faker.commerce.productDescription(),
         address: {
           addr_1: faker.address.streetAddress(),
           addr_2: faker.address.secondaryAddress(),
@@ -26,8 +24,10 @@ async function getSeedData () {
         }
       })
     )
+    // eslint-disable-next-line no-console
     console.log('database seed was successful')
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.log(error, 'database seed failed')
   }
 }
