@@ -14,9 +14,11 @@
     "db:clear": "curl -v -X DELETE 'http://localhost:8080/emulator/v1/projects/backpackers-e1027/databases/(default)/documents'"
   },
   "dependencies": {
+    "@bradgarropy/next-google-analytics": "^1.0.2",
     "firebase": "^9.6.8",
     "firebase-admin": "^10.0.2",
     "next": "12.1.0",
+    "next-auth": "^4.2.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-firebase-hooks": "^5.0.3"
